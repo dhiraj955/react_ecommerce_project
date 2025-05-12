@@ -1,0 +1,89 @@
+.sider{
+    background: #F0F0F0;
+    width: 220px;
+    height: 95vh;
+}
+.logout-section{
+    position: absolute;
+    top: 85%;
+}
+.logout{
+    height: 42px;
+    width: 170px;
+    margin-left: 20px;
+    border-radius: 50px;
+    border: none;
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.link{
+    text-decoration: none;
+}
+.link li{
+    list-style: none;
+    background: black;
+    color: white;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+thead {
+  background-color: black;
+  color: white;
+}
+
+thead th {
+  padding: 10px;
+}
+
+tbody {
+  background-color: white;
+  color: black;
+}
+
+tbody td {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.aheader{
+  background-color: white;
+  
+}
+.aheadre-section{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 180px;
+}
+/* .logo{
+  padding-left: 30px;
+} */
+
+.count{
+  display: flex;
+  gap: 50px;
+}
+.usercount, .productcount{
+  margin-top: 20px;
+  background-color: rgb(52, 119, 168);
+  color: #F0F0F0;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+.usercount p, .productcount p{
+  font-size: 20px;
+  text-align: center;
+
+}
