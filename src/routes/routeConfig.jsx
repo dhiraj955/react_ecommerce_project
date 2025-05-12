@@ -88,7 +88,7 @@ export const routeConfig = [
 
   },
   {
-    path: "*", // catch-all fallback route
+    path: "*", 
     element: <NotFound />
   }
 ]
