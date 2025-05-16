@@ -4,12 +4,12 @@ import { Outlet } from 'react-router'
 import AdminSider from './AdminSider'
 
 function AdminLayout() {
-     const isLoggedIn = !!localStorage.getItem("token");
-    console.log("isLoggedIn:", isLoggedIn);
+  //    const isLoggedIn = !!localStorage.getItem("token");
+  //   console.log("isLoggedIn:", isLoggedIn);
 
-  if (!isLoggedIn) {
-    return <Navigate to={"/login"} />;
-  }
+  // if (!isLoggedIn) {
+  //   return <Navigate to={"/login"} />;
+  // }
   return (
     <div>
       <AdminHeader/>

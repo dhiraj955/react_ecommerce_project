@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router";
 import Button from "./Button";
+import "../../pages/product/Product.css";
+import { CartContext } from "../../context/CartContext";
 
-const Card = ({ item }) => {
+const Card = ({ item, isInCart }) => {
+  const { cartData, setCartData } = useContext(CartContext);
+  console.log(cartData);
+
   return (
     <div className="card" key={item.id}>
       <div className="card-img">
@@ -19,7 +24,18 @@ const Card = ({ item }) => {
           <span>⭐ {item.rating}</span>
           <span>Stock: {item.stock}</span>
         </div>
-        <Button classname="buy-btn" name="Add to Cart" />
+        {isInCart ? (
+          <div className="buy-btn">Item Already in cart</div>
+        ) : (
+          <button
+            className="buy-btn"
+            onClick={() => {
+              setCartData([...cartData, item]);
+            }}
+          >
+            Add To Cart
+          </button>
+        )}
       </div>
     </div>
   );

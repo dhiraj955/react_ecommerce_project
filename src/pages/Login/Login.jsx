@@ -26,16 +26,16 @@ const isLoggedIn = localStorage.getItem("token");
         );
         if (matchedUser) {
           localStorage.setItem("token", matchedUser.username);
-          navigate("/admin/dashboard");
+          // navigate("/admin/dashboard");
         } else {
           alert("wrong credentials");
         }
       });
   };
 
-  if (isLoggedIn) {
-    return <Navigate to={"/admin/dashboard"} />;
-  }
+  // if (isLoggedIn) {
+  //   return <Navigate to={"/admin/dashboard"} />;
+  // }
   return (
     <div className='loginsignup'>
        <div className="loginsignup-cont">

@@ -33,7 +33,36 @@ span{
     height: 5px;
     background: #27548A;
     border-radius: 10px;
+} 
+.btn-section{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   
 }
+.btn-section button{
+    padding: 5px 7px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+}
+.btn-section button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    
+}
+.btn-section p{
+    background: rgb(210, 210, 210);
+    color: black;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
 @media (min-width: 992px) {
     .productdetail{
         width: 80%;

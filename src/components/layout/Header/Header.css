@@ -102,6 +102,21 @@ header{
     color: black;
     text-decoration: none;
 }
+.cart-icon-container {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
 
 @media screen and (min-width: 992px) {
     .navbar{

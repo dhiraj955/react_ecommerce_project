@@ -1,106 +1,50 @@
-/* .cart{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding-bottom: 100px;
-}
 .cart-section{
-    background: #F0F0F0;
-    border-radius: 20px;
-    padding: 24px;
+    width: 95%;
+    margin: auto;
+    
 }
-.heading{
+.cart-section h1{
     font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 24px;
-}
-.product-detail{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    margin-bottom: 16px;
-}
-.product-left, .product-right{
-    display: flex;
-    align-items: center;
-}
-.product-left img{
-    margin-right: 16px;
-    height: 100px;
-    width: 100px;
-}
-.product-name h2{
-    font-weight: bold;
-}
-.cartbtn{
-    margin: 16px 0;
-}
-.inputnuber{
-    width: 4rem;
     text-align: center;
-    padding: 5px;
+
 }
-.product-rights{
+.cart{
+    display: flex;
+    gap: 10px;
+    height: auto;
+    margin: 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.quantity-section{
     display: flex;
     gap: 20px;
+    margin: 10px 0;
+    
 }
-.product-right span, .price span, .total span{
-    font-weight: bold;
-}
-.price{
+.quantity-section button{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-.taxes, .total{
-    display: flex;
-    justify-content: space-between;align-items: center;
-    margin-top: 16px;
-}
-.total{
-    margin-top: 0;
-}
-.btnc{
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
-}
-.checkoutbtn{
-    background: black;
-    width: 180px;
-    height: 50px;
-    color: white;
-    font-weight: bold;
-    padding: 12px 16px;
-    border-radius: 50px;
+    padding: 5px;
+    border: none;
     cursor: pointer;
 }
-
-@media screen and (max-width: 600px){
-    .heading{
-        text-align: center;
-    }
-    .cart-section{
-        width: 370px;
-        margin: auto;
-    }
-    .product-right{
-    flex-direction: column;
-}
-.product-left img{
-    margin-right: 16px;
-
-    height: 100px;
-    width: 100px;
-}
-.product-name h2{
-    font-weight: bold;
-    font-size: 18px;
-}
-.product-name p{
+.quantity-section p{
     font-size: 14px;
+    margin-top: 5px;
+}
+.removebtn{
+    font-size: 14px;
+    background: black;
+    color: white ;
+    border-radius: 20px;
+    padding: 8px 26px !important ;
+
 }
 
-}  */
+@media screen and (min-width: 992px) {
+    .cart-section{
+    width: 75%;
+    
+    
+}
+}

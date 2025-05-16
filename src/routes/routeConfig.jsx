@@ -16,79 +16,75 @@ import Cart from "../pages/Cart/Cart";
 import NotFound from "../components/common/NotFound";
 import Signup from "../pages/SignUp/SignUp";
 
-
 export const routeConfig = [
-     {
+  {
     Component: AppLayout,
     children: [
-        {
-            path: "/",
-            errorElement: <NotFound/>,
-            element: <Home/>
-        },
-        {
-            path: "/shop",
-            element: <Shop/>
-        },
-        {
-            path: "/shop/:productID",
-            element: <ProductDetails/>
-        },
-        {
-            path: "/onsale",
-            element: <OnSale/>
-        },
-        {
-            path: "/newarrival",
-            element: <NewArrival/>
-        },
-        {
-            path: "/addproduct",
-            element: <AddProduct/>
-        },
-        {
-            path: "/cart",
-            element: <Cart/>
-        },
-    ]
+      {
+        path: "/",
+        errorElement: <NotFound />,
+        element: <Home />,
+      },
+      {
+        path: "/shop",
+        element: <Shop />,
+      },
+      {
+        path: "/shop/:productID",
+        element: <ProductDetails />,
+      },
+      {
+        path: "/onsale",
+        element: <OnSale />,
+      },
+      {
+        path: "/newarrival",
+        element: <NewArrival />,
+      },
+      {
+        path: "/addproduct",
+        element: <AddProduct />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+    ],
   },
   {
     path: "/login",
-    element: <Login/>
+    element: <Login />,
   },
   {
     path: "/signup",
-    element: <Signup/>
+    element: <Signup />,
   },
   {
     path: "/admin",
-    errorElement: <NotFound/>,
+    errorElement: <NotFound />,
     Component: AdminLayout,
-    children: [ 
-        {
-            path: "dashboard",
-            element: <Dashboard/>
-        },
-        {
-            path: "user",
-            element: <User/>
-        },
-        {
-            path: "product",
-            element: <Product/>
-        },
-        
-        {
-            path: "product",
-            element: <Product/>
-        },
-        
+    children: [
+      {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "user",
+        element: <User />,
+      },
+      {
+        path: "product",
+        element: <Product />,
+      },
 
-    ]
-
+      {
+        path: "product",
+        element: <Product />,
+      },
+    ],
   },
   {
-    path: "*", 
-    element: <NotFound />
-  }
-]
+    path: "*",
+    element: <NotFound />,
+  },
+];
